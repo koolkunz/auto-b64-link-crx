@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "Automatic Base64 Decoder & Link Generator (forum.snahp.it)",
+	"version": "1.0",
+	"description": "Automatically decode all base64 encoded strings/links on forum.snahp.it and create clickable links if decoded string is link",
+	"author": "koolkunz (K1tKat)",
+	"permissions": [
+		"storage"
+	],
+	"browser_action": {
+		"default_icon": "img/icon/icon-128.png",
+		"default_popup": "popup.html"
+	},
+	"icons": {
+      "16": "img/icon/icon-16.png",
+      "48": "img/icon/icon-48.png"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+	},
+	"content_scripts": [
+	{
+		"matches": [
+			"*://forum.snahp.it/viewtopic*"
+		],
+		"js": ["jquery-3.4.1.min.js", "content.js"]
+	}
+	]
+}
