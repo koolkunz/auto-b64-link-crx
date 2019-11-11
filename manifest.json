@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Automatic Base64 Decoder & Link Generator (forum.snahp.it)",
-	"version": "1.0",
+	"version": "1.1",
 	"description": "Automatically decode all base64 encoded strings/links on forum.snahp.it and create clickable links if decoded string is link",
 	"author": "koolkunz (K1tKat)",
 	"permissions": [
