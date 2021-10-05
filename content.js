@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name     Automatic Base64 Decoder & Link Generator (forum.snahp.it)
+// @name     Automatic Base64 Decoder & Link Generator (snahp forum)
 // @grant    none
-// @match    *://forum.snahp.it/viewtopic*
+// @match    *://fora.snahp.eu/viewtopic*
 // ==/UserScript==
 var lnt;
 
